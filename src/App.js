@@ -3,6 +3,7 @@ import Alert from "./components/Alert";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
+import Footer from "./components/Footer";
 import React, { useState } from 'react'
 import {
   HashRouter as Router,
@@ -58,6 +59,7 @@ function App() {
           </Routes>
           {/* <TextForm showAlert={showAlert} heading="Enter the text :" mode={mode} /> */}
         </div>
+        <Footer mode={mode} toggleMode={toggleMode}></Footer>
       </Router>
     </>
   );
