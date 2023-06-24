@@ -1,8 +1,12 @@
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin-bottom: 50px;
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  padding-bottom: 5.74rem;
 }
 
 .App {
@@ -36,7 +40,9 @@ body {
 }
 
 footer {
-  position: fixed;
+  position: absolute;
+  right: 0;
+  left: 0;
   bottom: 0;
   width: 100%;
   margin-top: auto;
