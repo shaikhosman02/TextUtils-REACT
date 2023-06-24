@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import React, { useState } from 'react'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
@@ -45,7 +45,7 @@ function App() {
   // }
   return (
     <>
-      <Router>
+      <Router >
         <Navbar title="TextUtils" aboutText="About Us" mode={mode} toggleMode={toggleMode} />
         {/* <Navbar title="Home" about="About" mode={mode} toggleMode={toggleMode} changegreen={changegreen} changered={changered} changeyellow={changeyellow}/> */}
         <Alert alert={alert} />
