@@ -35,20 +35,10 @@ function App() {
       showAlert("Light mode has been enabled", "success");
     }
   }
-  // const changegreen = ()=>{
-  //   document.body.style.backgroundColor = '#35C649'
-  // }
-  // const changeyellow = ()=>{
-  //   document.body.style.backgroundColor = '#CAB911'
-  // }
-  // const changered = ()=>{
-  //   document.body.style.backgroundColor = '#C15031'
-  // }
   return (
     <>
       <Router >
         <Navbar title="TextUtils" aboutText="About Us" mode={mode} toggleMode={toggleMode} />
-        {/* <Navbar title="Home" about="About" mode={mode} toggleMode={toggleMode} changegreen={changegreen} changered={changered} changeyellow={changeyellow}/> */}
         <Alert alert={alert} />
         <div className="container my-4">
           <Routes>
@@ -57,7 +47,6 @@ function App() {
             <Route path="/about" element={<About mode={mode} />}>
             </Route>
           </Routes>
-          {/* <TextForm showAlert={showAlert} heading="Enter the text :" mode={mode} /> */}
         </div>
         <Footer mode={mode} toggleMode={toggleMode}></Footer>
       </Router>
